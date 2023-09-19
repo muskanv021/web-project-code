@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dashboard.html">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js" defer></script>
+
     <title>LOg viewer</title>
 
 </head>
@@ -13,53 +17,52 @@
 <body class="root">
     <nav>
         <h1> Log analyzer</h1>
-        <div>
-        <input type="text" placeholder="Search..">
-        <button type="submit"><i class="fa fa-search"></i></button>
-    </div>
+        <div class="searchbox">
+            <input type="text" placeholder=" Search..">
+              <i class="fa fa-search"></i>
+
+
+        </div>
     </nav>
-    <hr>
+    
+    
     <div class="main">
+        <input type="checkbox" name="" id="check">
+         <label for="check">
+            <i class="fa fa-bars " id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+         </label>
         <div class="container-1">
             <div class="filter">
-                <i class="fa fa-filter"> FILTERS</i>
+                <i class="fa fa-filter"> FILTERS</i></div>
+           
+            <div class="slidebar">
+            
+        
+            <p><a href=""><i class="fa fa-qrcode">Dashbord</i></a></p>
+            <p><a href=""><i class="fa fa-external-link">Shortcuts</i></a></p>
+            <p><a href=""><i class="fa fa-stream">Overview</i></a></p>
+            <p><a href=""><i class="fa fa-calendar">Events</i></a></p>
+            <p><a href=""><i class="fa fa-question-circle">About</i></a></p>
+            <p><a href=""><i class="fa fa-sliders">Service</i></a></p>
+            <p><a href=""><i class="fa fa-envelope">Contact</i></a></p>
+            
+        </div>
+        </div>
+        <div id="container-2">
 
+            <div class="level-1">
+                <div class="box" draggable="true">
+                    
+                    <h5>date </h5>
+                    <h5>time</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Non sunt necessitatibus earum fuga illum, soluta ipsam suscipit reprehenderit accusantium nobis
+                        aperiam provident repellendus.</p>
+                    <div class="small-box-1">
+                           
+                    </div>
 
-              
-            </div>
-            <div class="level">
-                <i class="fa fa-caret-down" aria-hidden="true">   
-                 Machine
-
-                </i>
-                
-                    <label class="container">One
-                        <input checked="checked" type="checkbox" >
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="container">One
-                        <input checked="checked" type="checkbox" >
-                        <span class="checkmark"></span>
-                      </label>
-                
-                <div class="level">
-                    <i class="fa fa-caret-down" aria-hidden="true">   Machine</i>
-                    <label class="container">One
-                        <input checked="checked" type="checkbox" >
-                        <span class="checkmark"></span>
-                      </label>
-                </div>
-            </div>
-
-        </div> 
-                <div id="container-2">
-
-                 <div class="level-1">
-                    <div class="box">
-                        <h5>date time</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
-                        
-                   
                     <ul>
                         <p>IP address</p>
                         <p>Machine</p>
@@ -69,35 +72,96 @@
                         <p>Release</p>
                         <p>Processor</p>
 
-            
+
+                    </ul>
+                
+                </div>
+
+                <div class="box">
+                    <h5>date time</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga
+                        illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
+                        <div class="small-box-2">
+                           
+                        </div>
+                    <ul>
+                        <p>IP address</p>
+                        <p>Machine</p>
+                        <p>Host Name</p>
+                        <p>Version</p>
+                        <p>Node Namr</p>
+                        <p>Release</p>
+                        <p>Processor</p>
+
+
                     </ul>
                 </div>
 
-                    <div class="box">
-                        <h5>date time</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
-                    </div>
+
+                <div class="box">
+                    <h5>date time</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga
+                        illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
+                        <div class="small-box-3">
+                           
+                        </div>
+                    <ul>
+                        <p>IP address</p>
+                        <p>Machine</p>
+                        <p>Host Name</p>
+                        <p>Version</p>
+                        <p>Node Namr</p>
+                        <p>Release</p>
+                        <p>Processor</p>
 
 
-                    <div class="box">
-                        <h5>date time</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
-                    </div>
-
-                    <div class="box">
-                        <h5>date time</h5>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
-                    </div>
-
-                    <div class="box">
-                        <h5>date time</h5>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
-                    </div>
-
-
-                 </div>
+                    </ul>
                 </div>
-            
+
+                <div class="box">
+                    <h5>date time</h5>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga
+                        illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
+                        <div class="small-box-4">
+                           
+                        </div>
+                    <ul>
+                        <p>IP address</p>
+                        <p>Machine</p>
+                        <p>Host Name</p>
+                        <p>Version</p>
+                        <p>Node Namr</p>
+                        <p>Release</p>
+                        <p>Processor</p>
+
+
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h5>date time</h5>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt necessitatibus earum fuga
+                        illum, soluta ipsam suscipit reprehenderit accusantium nobis aperiam provident repellendus.</p>
+                        <div class="small-box-5">
+                           
+                        </div>
+                    <ul>
+                        <p>IP address</p>
+                        <p>Machine</p>
+                        <p>Host Name</p>
+                        <p>Version</p>
+                        <p>Node Namr</p>
+                        <p>Release</p>
+                        <p>Processor</p>
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
     </div>
 
 </body>
